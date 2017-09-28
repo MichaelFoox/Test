@@ -1,0 +1,35 @@
+body{
+    background-color: lightgrey;
+}
+
+.block-wrap{
+    width: 100%;
+    padding-top: 3%;
+    padding-right: 22%;
+}
+
+.content-wrap{
+    width: 35%;
+    height: 250px;
+    border: groove 2px;
+    border-radius: 4px;
+    float: right;
+    margin: 10px;
+
+}
+
+/*
+.total-companies{
+    width: 15em;
+    height: 30vh;
+    background-color: white;
+    border-radius: 200px;
+
+}
+*/
+
+
+select{
+    width: 100%;
+    height: 4vh;
+}
