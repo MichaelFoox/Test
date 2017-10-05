@@ -68,11 +68,19 @@ body{
     overflow-y: scroll;
 }
 
+.table-row{
+    height: auto;
+}
+
 .list-group-item:hover {
     background: cadetblue;
     cursor: pointer;
 }
+#partners-table{
+    height: 150px;
+    overflow-y: scroll;
 
+}
 /*
 .total-companies{
     width: 15em;
