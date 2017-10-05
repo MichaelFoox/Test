@@ -46,13 +46,3 @@ function validate() {
         $('#err-block').append("<div class='error-mass'>" + error.message + "</div>");
     })
 }
-
-function info() {
-    $.ajax({
-        url: 'http://codeit.pro/frontTestTask/company/getList'
-    }).then(function (result) {
-        console.log('result', result)
-    }).catch(function (err) {
-        console.log('err', err)
-    })
-}
