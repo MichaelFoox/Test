@@ -2,20 +2,38 @@ body{
     background-color: lightgrey;
 }
 
-.block-wrap{
-    width: 100%;
-    padding-top: 3%;
-    padding-right: 22%;
+.block-wrap .row{
+    width: 60%;
+    height: 250px;
+    margin: 0 auto;
 }
 
-.content-wrap{
-    width: 35%;
-    height: 250px;
+.block-wrap .row .col-md-6, .col-md-12{
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.content-wrap {
     border: groove 2px;
     border-radius: 4px;
-    float: right;
-    margin: 10px;
+    height: 100%;
 
+}
+
+.curtail-block{
+    width: 70%;
+    height: 300px;
+    border: groove 2px;
+    border-radius: 4px;
+
+}
+
+.up-line{
+    height: 20px;
+    width: 100%;
+    background-color: burlywood;
 }
 
 /*
@@ -29,7 +47,3 @@ body{
 */
 
 
-select{
-    width: 100%;
-    height: 4vh;
-}
