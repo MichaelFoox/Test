@@ -2,6 +2,38 @@ body{
     background-color: lightgrey;
 }
 
+.btn-chart{
+    float: right;
+    margin-left: 50%;
+}
+
+.chart-wrap{
+    display: flex;
+    align-items: center;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.card-body{
+    padding: 0;
+}
+
+.header-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text-wrap{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .block-wrap .row{
     width: 60%;
     height: 250px;
@@ -12,7 +44,6 @@ body{
     height: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-
 }
 
 .content-wrap {
@@ -22,26 +53,11 @@ body{
     border: groove 2px;
     border-radius: 4px;
     height: 100%;
-
-
-}
-
-.curtail-block{
-    width: 70%;
-    height: 300px;
-    border: groove 2px;
-    border-radius: 4px;
-
-}
-
-.up-line{
-    height: 20px;
-    width: 100%;
-    background-color: burlywood;
 }
 
 .card{
     height: 100%;
+    line-height: 0;
 }
 
 .total-companies .card-body{
@@ -60,7 +76,6 @@ body{
     height: 160px;
     width: 160px;
     font-size: 30px;
-
 }
 
 .list-group{
@@ -70,6 +85,8 @@ body{
 
 .table-row{
     height: auto;
+    display: none;
+    line-height: 0;
 }
 
 .list-group-item:hover {
@@ -79,16 +96,14 @@ body{
 #partners-table{
     height: 150px;
     overflow-y: scroll;
-
 }
-/*
-.total-companies{
-    width: 15em;
-    height: 30vh;
-    background-color: white;
-    border-radius: 200px;
 
+g[column-id]:hover{
+    cursor: pointer;
 }
-*/
+
+#loc_list{
+    display: none;
+}
 
 

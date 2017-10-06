@@ -19,7 +19,7 @@ $('#post-btn').on('click', function (e) {
 function validate() {
     var regex = /^[a-zA-Z ]{2,30}$/;
     var err = [];
-
+    $('#err-block').html('');
     // var a = $('#post-form').serializeArray();
     if(!$('#name')[0].value.match(regex)) {
         err.push({"message" : "Name is not valid",
@@ -40,7 +40,6 @@ function validate() {
             "status" : "Form Error"
         })
     }
-    console.log(err);
 
     err.forEach(function(error){
         $('#err-block').append("<div class='error-mass'>" + error.message + "</div>");
