@@ -150,25 +150,19 @@ g[column-id]:hover{
     padding: 4px;
 }
 
-.cont-left{
-    width: 55%;
-
-}
-
-.cont-right{
-    width: 40%;
-    height: 160px;
-    float: right;
-}
-
-.text-news{
-    width: 60%;
-    overflow: scroll;
-}
-
-/*.scrolling{*/
-    /*overflow: scroll;*/
+/*.cont-left{*/
+    /*width: 50%;*/
 /*}*/
+
+/*.cont-right{*/
+    /*width: 50%;*/
+    /*height: 160px;*/
+/*}*/
+
+#text-news{
+    width: 100%;
+    overflow-y: scroll;
+}
 
 .swiper-container {
     position: inherit!important;

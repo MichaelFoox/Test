@@ -2,20 +2,17 @@
 
 $('#post-btn').on('click', function (e) {
     e.preventDefault();
-    if (validate()) {
 
-        // $.post('http://codeit.pro/frontTestTask/user/registration', $('#post-form').serialize(),
-        //     function (response) {
-        //         console.log(response);
-        //     });
-        document.location.href = "\comp.html";
-
-    } else {
-
+    if (isValid()) {
+        document.location.href = "comp.html";
+        $.post('http://codeit.pro/frontTestTask/user/registration', $('#post-form').serialize(),
+            function (response) {
+                console.log(response);
+            })
     }
-});
+})
 
-function validate() {
+function isValid() {
     var regex = /^[a-zA-Z ]{2,30}$/;
     var err = [];
     $('#err-block').html('');
@@ -36,14 +33,22 @@ function validate() {
         })
     }
     if ($('#pass')[0].value.length < 8) {
-        err.push({
+        var errorMessage = {
             "message": "Password must be bigger than 8 symbols!",
             "field": "pass",
             "status": "Form Error"
-        })
+        }
+        err.push(errorMessage)
     }
+
 
     err.forEach(function (error) {
         $('#err-block').append("<div class='error-mass'>" + error.message + "</div>");
     })
+
+    if (err.length) {
+        return false;
+    } else {
+        return true;
+    }
 }

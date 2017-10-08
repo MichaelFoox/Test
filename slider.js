@@ -20,11 +20,11 @@ $(document).ready(function () {
         var sliderContent = $(".swiper-slide")
 
         for (var i = 0; i < response.list.length; i++) {
-            $(sliderContent[i]).append('<li><div class="cont-right"><img class="image-wrap slider-elements" src="' + result[i].img + '" alt="">'
+            $(sliderContent[i]).append('<div class="row"><div class="col-md-6 cont-right"><img class="image-wrap slider-elements" src="' + result[i].img + '" alt="">'
                 + '<p class="author-wrap slider-elements">' + result[i].author + '</p>'
                 + '<p class="public-wrap slider-elements">' + result[i].date + '</p></div>'
-                + '<div class="cont-left"><h5 class="title-wrap slider-elements">' + result[i].link + '</h5></div>'
-                + '<p class="text-news slider-elements">' + result[i].description + '</p></li>');
+                + '<div class="col-md-6"><div class="cont-left"><h5 class="title-wrap slider-elements">' + result[i].link + '</h5></div>'
+                + '<p class="text-news slider-elements">' + result[i].description + '</p></div></div>');
         }
 
     });
