@@ -84,7 +84,7 @@ $.get('http://codeit.pro/frontTestTask/company/getList', function (response) {
             }
         });
     });
-    
+
 });
 
 function loc() {

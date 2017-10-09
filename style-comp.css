@@ -34,13 +34,13 @@ body{
     width: 100%;
 }
 
-.block-wrap .row{
+.block-wrap > .row{
     width: 60%;
     height: 300px;
     margin: 0 auto;
 }
 
-.block-wrap .row .col-md-6, .col-md-12{
+.block-wrap > .row > .col-md-6, .col-md-12{
     height: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -98,6 +98,9 @@ g[column-id]:hover{
 }
 
 /*------------slider------------*/
+.container{
+    padding: 0;
+}
 
 .slider {
     z-index: 9;
@@ -143,25 +146,41 @@ g[column-id]:hover{
 }
 
 .image-wrap{
-    width: 70%;
+    width: 65%;
+    padding-left: 20px;
 }
 
 .slider-elements{
     padding: 4px;
 }
 
-/*.cont-left{*/
-    /*width: 50%;*/
-/*}*/
+.cont-left{
+    width: 55%;
+    margin-left: 10px;
+}
 
-/*.cont-right{*/
-    /*width: 50%;*/
-    /*height: 160px;*/
-/*}*/
+
+.cont-right{
+    margin-left: 30px;
+    width: 45%;
+    height: 160px;
+    float: right;
+}
 
 #text-news{
     width: 100%;
-    overflow-y: scroll;
+    height: 150px;
+}
+
+.string-length{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.author-wrap{
+    margin-bottom: 0;
 }
 
 .swiper-container {
